@@ -1,0 +1,53 @@
+# Model based on Proxima b
+sSystemName	proxima
+sTideModel	CTL
+bDiscreteRot	1
+
+iVerbose	2
+iDigits		8
+iSciNot		4
+
+# Tidal locking
+bHaltSecLock		1
+bHaltSecSync		0
+
+# Write log file
+bDoLog		0
+
+sUnitMass             solar
+sUnitLength           AU
+sUnitTime             year
+sUnitAngle            degrees
+
+bDoForward            1
+bVarDt                1
+dForwardStopTime      13e9
+dForwardOutputTime    1e6
+sForwardFile          tlock.forward
+dTimestepCoeff        0.01
+dMinValue             1e-10
+
+dPrimaryMass          0.6348    # solar
+dPrimaryRadius        -0.6390   # solar
+dPrimarySpinPeriod    -83     # days
+dPrimaryObliquity     0
+dPrimaryRadGyra       0.1
+dPrimaryK2            1.5
+dPrimaryQ             1e6
+dPrimaryTau           -0.01
+
+
+dSecondaryMass	      -53.00   # earth
+dSecondaryObliquity   0
+dSecondaryK2	      1.50
+dSecondaryRadGyra     0.246
+dSecondarySpinPeriod  -0.125    # days (3 h)
+dSecondaryRadius      -8.49   # earth
+dSecondaryQ	      3.21e5
+dSecondaryTau	      -2.38e-2
+dSecondaryMaxLockDiff 0.01
+
+dSemi                 0.457
+dEcc                  0.
+
+sOutputOrder Time Semim Ecce SecObli

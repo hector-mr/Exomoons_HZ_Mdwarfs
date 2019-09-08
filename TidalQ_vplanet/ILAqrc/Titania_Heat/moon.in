@@ -1,0 +1,29 @@
+# Moon's Properties
+# Template for vspace
+sName		    moon		   # Body's name
+saModules   eqtide   # Modules to apply to this body
+
+# Physical Parameters
+# Mass and radius of moon (Ganymede)
+dMass		     -5.903e-04  # Mass, negative -> Earth masses   # Hector: change this
+dRadius      -0.414  # Radius, negative -> Earth radii      # Hector: change this
+dRadGyra	   0.27	   # Radius of gyration (moment of inertia constant)
+# Eqtide will override dRotPeriod with bForceEqSpin
+#dRotPeriod   -30.0   # Rotation period (-1 -> days)      # Hector: change this
+# dObliquity will be modified vspace
+dObliquity   0      # Obliquity      # Hector: change this
+
+# Orbital Parameters, from https://ssd.jpl.nasa.gov/?sat_elem (18 Jul 2018)
+dEcc          0.01 		# Eccentricity (vspace parameter)   # Hector: change this
+dSemi         75.856  # Semi-major axis (negative for AU)   # Hector: change this (all length scales set as Earth units in vpl.in)
+
+# EQTIDE Parameters, from Lainey (2016)
+dTidalQ       100   # Tidal Q (assumed)
+dK2           0.3   # Love Number of degree 2   	# Hector: change this
+saTidePerts   planet   # Name of tidal perturber (only central body may have >1)
+bForceEqSpin  1     # Force moon's rotation period to be tidally locked
+
+
+# Output Options
+sOutFile    moon.forward
+saOutputOrder Age -PowerEqtide SemiMajorAxis Eccentricity # Tidal power in TW

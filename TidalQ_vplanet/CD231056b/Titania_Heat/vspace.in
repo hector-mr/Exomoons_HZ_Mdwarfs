@@ -1,0 +1,11 @@
+srcfolder  .
+destfolder data
+trialname  moonheat
+
+file   vpl.in
+
+file   planet.in
+
+file   moon.in
+# dEcc  [1e-3,0.3,l30] e
+# dObliquity [1e-4,0.01,l30] o
