@@ -7,7 +7,7 @@ https://arxiv.org/abs/1910.12054
 This repository is structured as follows:
 
 
-- Main IPython notebook ./HZ_exo.ipynb: Necessary to reproduce all the figures from the paper. This comprises the following: habitability zones from the one-dimensional radiative transfer equation (not included in the paper), interpolations to find k2, Q and lambda for all the exoplanets in our sample, Figure 2, exomoon stability and migration, Figure 4, Figure 3, exomoondetection by radial velocity (not included in the paper), Figure 1, tidal-locking timescale calculations, and Figure 5 (limit for for the exomoon migration timescale using a_Roche and a_crit).
+- Main IPython notebook ./HZ_exo.ipynb: Necessary to reproduce all the figures from the paper. This comprises the following: habitability zones from the one-dimensional radiative transfer equation (not included in the paper), interpolations to find k2, Q and lambda for all the exoplanets in our sample, Figure 2, exomoon stability and migration, Figure 4, Figure 3, exomoon detection by radial velocity (not included in the paper), Figure 1, tidal-locking timescale calculations, and Figure 5 (limit for for the exomoon migration timescale using a_Roche and a_crit).
 
 - Directory ./data_Kop: Includes habitability zone boundaries from Kopparapu et al. (2014) (see https://ui.adsabs.harvard.edu/abs/2014ApJ...787L..29K/abstract).
 
