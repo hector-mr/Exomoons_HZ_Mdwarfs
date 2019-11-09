@@ -18,3 +18,6 @@ This repository is structured as follows:
 - Directory ./TidalQ_vplanet: Necessary to calculate the tidal heating for the four exoplanet-exomoon systems in Table 4 (see https://github.com/VirtualPlanetaryLaboratory/vplanet).
 
 - Directory ./tlock_eqtide: Necessary to calculate the tidal locking timescales for each potentially habitable exoplanet-exomoon system in our sample (see https://github.com/RoryBarnes/EqTide).
+
+
+License under https://doi.org/10.5281/zenodo.3533659
